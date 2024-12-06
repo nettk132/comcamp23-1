@@ -913,6 +913,7 @@ section,
   border-radius: 50px;
   transition: 0.5s;
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+
 }
 
 .hero .btn-get-started:hover {
@@ -963,7 +964,7 @@ section,
 
   .hero .btn-get-started,
   .hero .btn-watch-video {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
@@ -1811,3 +1812,41 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+.neon-text {
+  color: #ffcc00; /* สีเหลือง Neon */
+  text-shadow: 
+      0 0 5px #ffcc00, 
+      0 0 10px #ffcc00, 
+      0 0 15px #ffcc00, 
+      0 0 20px #ffcc00, 
+      0 0 25px #ffcc00, 
+      0 0 30px #ffcc00, 
+      0 0 35px #ffcc00;
+  animation: neon-flicker 1.5s infinite alternate;
+}
+
+@keyframes neon-flicker {
+  0% { opacity: 1; }
+  50% { opacity: 0.7; }
+  100% { opacity: 1; }
+}
+
+.countdown {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ffcc00; /* สีเหลือง Neon */
+    margin-top: 20px;
+}
+
+#timer {
+    font-weight: bold;
+
+.me-3 {
+  margin-right: 1rem;
+  }
+
+
+
+}
+

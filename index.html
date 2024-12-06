@@ -27,6 +27,14 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- Google API -->
+  <script src="https://apis.google.com/js/api.js"></script>
+
+    <!-- Custom JS for Sheets -->
+  <script src="assets/js/sheets.js"></script>
+
+
+
 </head>
 
 <body class="index-page">
@@ -37,7 +45,7 @@
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Comcamp csmju 23</h1>
+        <h1 class="sitename">Comcamp23</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -45,14 +53,14 @@
           
           <li><a href="#about">หัวข้ออบรม</a></li>
           <li><a href="#features">สิ่งที่ได้รับ</a></li>
-          <li><a href="#timeline" class="active">ทามไลน์</a></li>
+          <li><a href="#timeline" class="active">ไทม์ไลน์</a></li>
+          <li><a href="https://drive.google.com/file/d/1oiHqDyoBnBXCrS7Pxf3q6G0vlbsKKxT3/view?usp=drive_link" target="_blank" rel="noopener">กำหนดการ</a></li>
           <li><a href="#gallery">รีวิว</a></li>
           <li><a href="#team">เกี่ยวกับเรา</a></li>
           <li><a href="#faq">คำถาม</a></li>
-     
           <li><a href="#contact">ติดต่อ</a></li>
-          <li><a href="https://forms.gle/PqaKt3z7tMUaq8hp7" target="_blank">ส่งหลักฐานการชำระเงิน</a></li>
-          <li><a href="หนังสือขออนุญาตผู้ปกครอง.pdf" target="_blank">ดาวน์โหลดใบขออนุญาตผู้ปกครอง</a></li>
+          <li><a href="https://forms.gle/PqaKt3z7tMUaq8hp7" target="_blank" rel="noopener">ส่งหลักฐานการชำระเงิน</a></li>
+          <li><a href="https://drive.google.com/file/d/1mZ3CNi14ezBiOXo2cxadAR6YHXJynKhg/view?usp=drive_link" target="_blank" rel="noopener">ดาวน์โหลดใบขออนุญาตผู้ปกครอง</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -68,27 +76,52 @@
 
       <div class="container">
         <div class="row gy-5 justify-content-between">
-          <div class="col-lg-4 order-lg-last hero-img" data-aos="zoom-out" data-aos-delay="100">
+          <div class="col-lg-4 order-lg-last hero-img d-flex flex-column align-items-center" data-aos="zoom-out" data-aos-delay="100">
             <img src="assets/public/images/logo.PNG" class="img-fluid animated" alt="Logo">
-        
+            <span class="neon-text"> 
+              <h3>
+                แล้วพบกัน 24 - 26 มกราคม 2568
+              </h3>
+            </span>
+            <span class="neon-text"> 
+              <h3>
+                ณ มหาวิทยาลัยแม่โจ้
+              </h3>
+            </span>
+            <span>
+              <div id="countdown" class="countdown">
+                <h4>นับถอยหลังเปิดค่าย</h4>
+                <div id="timer">
+                    <span id="days"></span> วัน 
+                    <span id="hours"></span> ชั่วโมง 
+                    <span id="minutes"></span> นาที 
+                    <span id="seconds"></span> วินาที
+                </div>
+            </div>
+            </span>
+
           </div>
 
           <div class="col-lg-6  d-flex flex-column justify-content-center" data-aos="fade-in">
-            <h1>COMCAMP CSMJU 23 <br><span>เปิดรับสมัครแล้ว วันที่ 5 - 26 ธันวาคม 2567</span></h1>
-            <p>ค่ายยุวชนคอมพิวเตอร์ หรือ คอมแคมป์ เป็นค่ายที่จัดขึ้นโดยสาขาวิชาวิทยาการคอมพิวเตอร์ คณะ
-              วิทยาศาสตร์ มหาวิทยาลัยแม่โจ้ <br>เพื่อเปิดโอกาสให้น้องๆ ที่สนใจเรียนรู้และฝึกฝนทักษะ ด้าน
-              คอมพิวเตอร์อย่างสนุกสนานเป็นเวลา 3 วัน 2 คืน</p>
+            <h1>
+              COMCAMP23 
+            <br>
+            <span>เปิดรับสมัครแล้ว วันที่ 5 - 26 ธันวาคม 2567</span>
+          </h1>
+            <p>ค่ายยุวชนคอมพิวเตอร์ หรือ คอมแคมป์ เป็นค่ายที่จัดขึ้น โดยสาขาวิชาวิทยาการคอมพิวเตอร์ 
+              คณะวิทยาศาสตร์ มหาวิทยาลัยแม่โจ้ <br> เพื่อเปิดโอกาสให้น้องๆ ที่สนใจเรียนรู้และฝึกฝนทักษะ 
+              ด้านคอมพิวเตอร์อย่างสนุกสนานเป็นเวลา 3 วัน 2 คืน
+            </p>
+
               <p class="qualification text-left">
                 <strong>คุณสมบัติของผู้สมัคร:</strong><br>
                 1. มีความสนใจด้านคอมพิวเตอร์<br>
                 2. ปัจจุบันต้องกำลังศึกษาอยู่ระดับมัธยมศึกษาตอนปลาย หรือ ประกาศนียบัตรวิชาชีพ (ปวช.)
               </p>
-              <div class="d-flex">
-                <a href="https://forms.gle/3RM7Kxnd1EcDne8N8" class="btn-get-started" target="_blank">สมัครเพื่อเข้าร่วม</a>
-                
-              
+              <div class="d-flex ">
+                <a href="https://forms.gle/3RM7Kxnd1EcDne8N8" class="btn-get-started me-3 " target="_blank" rel="noopener">สมัครเพื่อเข้าร่วม</a>
+                <a href="#list-names" class="btn-get-started" rel="noopener">ประกาศรายชื่อ</a>
               </div>
-              
           </div>
 
         </div>
@@ -120,7 +153,7 @@
           <div class="col-xl-5 content">
             <h3>หัวข้ออบรม</h3>
             <h2>พัฒนาทักษะด้านปัญญาประดิษฐ์ (AI) ขั้นพื้นฐานสำหรับประยุกต์ใช้งานบนหลายแพลตฟอร์ม</h2>
-            <p> เทคโนโลยีและนวัตกรรม โดยเฉพาะปัญญาประดิษฐ์ (AI) มีบทบาทสำคัญในการสนับสนุนข้อมูลด้านการศึกษาและการพัฒนาทักษะในหลากหลายด้าน เช่น การเกษตร การแพทย์ และการศึกษา AI ถูกออกแบบให้เลียนแบบการทำงานของสมองมนุษย์ เพื่อให้สามารถโต้ตอบกับผู้ใช้ได้เหมือนมนุษย์ โดยกระบวนการพัฒนาเริ่มจากการเรียนรู้ รับข้อมูล ประมวลผล และนำมาประยุกต์ใช้งาน ซึ่งชุดข้อมูล (Data Set) เป็นหัวใจสำคัญในการสร้างความรู้และโมเดล AI การเรียนรู้ AI ช่วยพัฒนาความคิดสร้างสรรค์และสร้างประสบการณ์ใหม่ที่สามารถนำไปใช้พัฒนาชุมชนและคุณภาพชีวิตในอนาคต โดยมีขั้นตอนการทำงาน 4 ขั้นตอน ดังนี้</p>
+            <p> เทคโนโลยีและนวัตกรรม โดยเฉพาะปัญญาประดิษฐ์ (AI) มีบทบาทสำคัญในการสนับสนุนข้อมูลด้านการศึกษาและการพัฒนาทักษะในหลากหลายด้าน เช่น การเกษตร การแพทย์ และการศึกษา AI ถูกออกแบบให้เลียนแบบการทำงานของสมอมนุษย์ เพื่อให้สามารถโต้ตบกับผู้ใช้ได้เหมือนมนุษย์ โดยกระบวนการพัฒนาเริ่มจากการเรียนรู้ รับข้อมูล ประมวลผล และนำมาประยุกต์ใช้งาน ซึ่งชุดข้อมูล (Data Set) เป็นหัวใจสำคัญในการสร้างความรู้และโมเดล AI การเรียนรู้ AI ช่วยพัฒนาความคิดสร้างสรรค์และสร้างประสบการณ์ใหม่ที่สามารถนำไปใช้พัฒนาชุมชนและคุณภาพชีวิตในอนาคต โดยมีขั้นตอนการทำงาน 4 ขั้นตอน ดังนี้</p>
            
           </div>
 
@@ -147,7 +180,8 @@
                 <div class="icon-box">
                   <i class="bi bi-box-arrow-right"></i>
                   <h3>Export</h3>
-                  <p>เป็นขั้นตอนของการทดสอบโมเดลโดยการใส่รูปภาพ เสียง หรือทำท่าทางใหม่ แล้วให้โมเดลที่สร้างขึ้นตอบออกมาว่าเป็นอะไร และสามารถ export โมเดลออกไปใช้ต่อในระบบหรือแพลตฟอร์ม อื่นๆ ได้</p>
+                  <p>เป็นขั้นตอนของการทดสอบโมเดลโดยการใส่รูปภาพ เสียง หรือทำท่าทางใหม่ แล้วให้โมเดลที่สร้างขึ้นตอบออกมาว่าเป็นอะไร และสามารถ export 
+                    โมเดลออกไปใช้ต่อในระบบหรือแพลตฟอร์มอื่น ๆ ได้</p>
                 </div>
               </div> <!-- End Icon Box -->
 
@@ -155,7 +189,7 @@
                 <div class="icon-box">
                   <i class="bi bi-graph-up-arrow"></i>
                   <h3>IoT (Internet of Things) </h3>
-                  <p>IoT คือการเชื่อมต่ออุปกรณ์ต่าง ๆ เข้ากับอินเทอร์เน็ต  ค่ายนี้เหมาะกับน้อง ๆ ที่อยากเริ่มต้นเรียนรู้การสร้างและการเชื่อมต่อ เพื่อพัฒนาอุปกรณ์ IoT ในแบบของตัวเองได้ง่ายและสนุกขึ้น!</p>
+                  <p>IoT คือการเชื่อมต่ออุปกรณ์ต่าง ๆ เข้ากับอินเทอร์เน็ต  ค่ายนี้เหมาะกับน้อง ๆ ที่อยากเริยนรู้การสร้างและการเชื่อมต่อ เพื่อพัฒนาอุปกรณ์ IoT ในแบบของตัวเองได้ง่ายและสนุกขึ้น!</p>
                 </div>
               </div> <!-- End Icon Box -->
 
@@ -167,59 +201,86 @@
 
     </section><!-- /About Section -->
 
+
+    <!-- list-names section -->
+
+    <section id="list-names" class="list-names-section">
+      <div class="container" data-aos="fade-up">
+        <h2 class="text-center mb-4 mt-5 neon-green-text">ผลประกาศรายชื่อผู้มีสิทธ์เข้าร่วมโครงการ</h2>
+        <div class="name-table-wrapper mt-5">
+          <table class="name-table ">
+            <thead>
+              <tr>
+                <th width="5%">ลำดับ</th>
+                <th width="35%">ชื่อ-นามสกุล</th>
+                <th width="20%">ชื่อเล่น</th>
+                <th width="40%">โรงเรียน</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- ข้อมูลจะถูกเพิ่มโดย JavaScript -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- list-names section -->
+
+
     <!-- Features Section -->
     <section id="features" class="features section">
 
       <div class="container">
-        <h2 class="text-center mb-4" data-aos="fade-up">สิ่งที่พวกเราทุกคนจะได้รับในการเข้าร่วม</h2>
+        <h2 class="text-center mb-4" data-aos="fade-up">สิ่งที่พวกเราทุกคนจะได้รับในการเขาร่วม</h2>
         <div class="row gy-4">
 
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
             <div class="features-item">
               <i class="bi bi-file-pdf" style="color: #ffbb2c;"></i>
-              <h3><a href="" class="stretched-link">เอกสารการอบรม</a></h3>
+              <h3><a class="stretched-link">เอกสารการอบรม</a></h3>
             </div>
           </div><!-- End Feature Item -->
 
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
             <div class="features-item">
               <i class="bi bi-person" style="color: #5578ff;"></i>
-              <h3><a href="" class="stretched-link">เสื้อค่าย</a></h3>
+              <h3><a class="stretched-link">เสื้อค่าย</a></h3>
             </div>
           </div><!-- End Feature Item -->
 
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
             <div class="features-item">
               <i class="bi bi-backpack2" style="color: #e80368;"></i>
-              <h3><a href="" class="stretched-link">กระเป๋าค่าย</a></h3>
+              <h3><a class="stretched-link">กระเป๋าค่าย</a></h3>
             </div>
           </div><!-- End Feature Item -->
 
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="400">
             <div class="features-item">
               <i class="bi bi-cup-hot" style="color: #e361ff;"></i>
-              <h3><a href="" class="stretched-link">อาหารและเบรค</a></h3>
+              <h3><a class="stretched-link">อาหารและเบรค</a></h3>
             </div>
           </div><!-- End Feature Item -->
 
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="500">
             <div class="features-item">
               <i class="bi bi-house" style="color: #47aeff;"></i>
-              <h3><a href="" class="stretched-link">ที่พัก</a></h3>
+              <h3><a class="stretched-link">ที่พัก</a></h3>
             </div>
           </div><!-- End Feature Item -->
 
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="600">
             <div class="features-item">
               <i class="bi bi-award" style="color: #ffa76e;"></i>
-              <h3><a href="" class="stretched-link">ใบประกาศนียบัตร</a></h3>
+              <h3><a class="stretched-link">ใบประกาศนียบัตร</a></h3>
             </div>
           </div><!-- End Feature Item -->
 
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="700">
             <div class="features-item">
               <i class="bi bi-lightbulb" style="color: #11dbcf;"></i>
-              <h3><a href="" class="stretched-link">ความรู้และประสบการณ์</a></h3>
+              <h3><a  class="stretched-link">ความรู้และประสบการณ์</a></h3>
             </div>
           </div><!-- End Feature Item -->
 
@@ -272,7 +333,7 @@
         <Container>
           <div class="container section-title" data-aos="fade-up">
             <h2>timeline</h2>
-            <div><span class="description-title">ทามไลน์</span></div>
+            <div><span class="description-title">ไทม์ไลน์</span></div>
           </div><!-- End Section Title -->
             <div class="timeline-container">
                 <!-- Timeline Item 1 -->
@@ -295,7 +356,7 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-content" style="background-color: #0A101F;">
                         <h3 class="timeline-title">ปิดรับสมัคร</h3>
-                        <p class="timeline-date">วันที่ 25 ธันวาคม 2567</p>
+                        <p class="timeline-date">วันที่ 26 ธันวาคม 2567</p>
                         <p class="timeline-description">สิ้นสุดการรับสมัคร อย่าลืมสมัครให้ทัน!</p>
                     </div>
                 </div>
@@ -357,7 +418,7 @@
     
         #timeline {
             padding: 4rem 0;
-            background: linear-gradient(180deg, #0A101F, #0A101F, #0A101F, ##0A101F); /* ครอบคลุมทั้งข้างบนและข้างล่าง */
+             /* ครอบคลุมทั้งข้างบนและข้างล่าง */
             color: #0A101F;
         }
     
@@ -726,14 +787,14 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>เกี่ยวกับเรา</h2>
-        <div><span>สาขาวิทยาการคอมพิวเตอร์</span></div>
+        <div><span>สาขาวิชาวิทยาการคอมพิวเตอร์</span></div>
       </div><!-- End Section Title -->
 
       <div class="container my-5">
         <div class="row align-items-center">
           <!-- คอลัมน์ซ้าย -->
           <div class="col-lg-6 col-md-12 mb-4">
-            <a href="https://maps.app.goo.gl/EgkFwh6pQybppmpSA" target="_blank" class="card shadow-sm text-decoration-none">
+            <a href="https://www.cs.mju.ac.th" target="_blank" rel="noopener" class="card shadow-sm text-decoration-none">
               <img src="assets/public/images/comsci.png" class="card-img-top" alt="Comsci">
               <div class="card-body">
                 <h4 class="card-title">สาขาวิชาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์ มหาวิทยาลัยแม่โจ้</h4>
@@ -745,7 +806,7 @@
           </div>
           <!-- คอลัมน์ขวา -->
           <div class="col-lg-6 col-md-12 mb-4">
-            <a href="https://maps.app.goo.gl/EgkFwh6pQybppmpSA" target="_blank" class="card shadow-sm text-decoration-none">
+            <a href="https://maps.app.goo.gl/EgkFwh6pQybppmpSA" target="_blank" rel="noopener" class="card shadow-sm text-decoration-none">
               <img src="assets/public/images/map.png" class="card-img-top" alt="Map">
               <div class="card-body">
                 <h4 class="card-title">สถานที่จัดอบรม</h4>
@@ -770,7 +831,7 @@
   </div><!-- End Section Title -->
 
   <div class="container">
-    <div class="row gy-5 d-flex justify-content-center align-items-center text-center">
+    <div class="row gy-5 d-flex justify-content-center align-items-center text-center ">
       <!-- Sponsor 1 -->
       <div class="col-auto p-3">
         <img
@@ -865,7 +926,7 @@
                 <i class="faq-icon bi bi-question-circle"></i>
                 <h3>ค่ายนี้มีกิจกรรมอะไรบ้างกันบ้างคะ</h3>
                 <div class="faq-content">
-                  <p>ค่ายนี้มีกิจกรรมหลัก ๆ อยู่ 2 ส่วน ส่วนแรกเป็นการเรียนการสอน ได้แก่ การเรียนรู้ทางทฤษฎี การฝึกฝนทักษะและการสร้างชิ้นงานนำเสนอค่ะ ส่วนอันที่สองเป็นกิจกรรมร่วมสนุกที่ทางพวกพี่ ๆ ได้จัดเตรียมให้ค่ะ ส่วนจะเป็นอะไรนั้นต้องรอลุ้นกันในค่ายนะคะ :)</p>
+                  <p>ค่ายนี้มีกิจกรรมหลัก ๆ อยู่ 2 ส่วน ส่วนแรกเป็นการเรียนการสอน ได้แก่ การเรียนรู้ทางทฤษฎี การฝึกฝนทักษะและการสร้างชิ้นงานนำเสนอค่ะ ส่วนอันที่สองเป็นกิจกรรมร่วมสนุกที่ทางพวกพี่ ๆ ได้จัดเตรียมให้ค่ะ ส่วนจะเงนอะไรนั้นต้องรอลุ้นกันในค่ายนะคะ :)</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>
@@ -875,7 +936,7 @@
                 <i class="faq-icon bi bi-question-circle"></i>
                 <h3>ไม่มีพื้นฐานทางด้านคอมพิวเตอร์เลย สามารถมาสมัครได้มั้ยครับ?</h3>
                 <div class="faq-content">
-                  <p>ไม่จำเป็นต้องมีความรู้พื้นฐานอะไรมาก่อน น้อง ๆ ก็สามารถมาได้ แต่ถ้ามีความรู้พื้นฐานอยู่แล้วก็จะเป็นประโยชน์ต่อการเรียนรู้ในค่ายค่ะ</p>
+                  <p>ไม่จำเป็นต้องมีความรู้พื้นฐานอะไมา่อน น้อง ๆ ก็สามารถมาได้ แต่ถ้ามีความรู้พื้นฐานอยูแล้วก็จะเป็นประโยชน์ต่อการเรียนรู้ในค่ายค่ะ</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>
@@ -895,7 +956,7 @@
                 <i class="faq-icon bi bi-question-circle"></i>
                 <h3>การเข้าค่ายในครั้งนี้ จะได้รับเกียรติบัตรหรือประกาศนียบัตรอะไรมั้ยครับ</h3>
                 <div class="faq-content">
-                  <p>ใด้ค่ะ น้อง ๆ ที่เข้าร่วมค่ายจะได้รับเกียรติบัตร หรือ ประกาศนียบัตรค่ายกันทุกคนค่ะ</p>
+                  <p>ได้ค่ะ น้อง ๆ ที่เข้าร่วมค่ายจะได้รับเกียรติบัตร หรือ ประกาศนียบัตรค่ายกันทุกคนค่ะ</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>
@@ -1034,6 +1095,157 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <script>
+    // วันที่เป้าหมาย
+    const targetDate = new Date("January 24, 2025 00:00:00").getTime();
+
+    // อัปเดตตัวนับทุก 1 วินาที
+    const countdownFunction = setInterval(function() {
+        const now = new Date().getTime();
+        const distance = targetDate - now;
+
+        // คำนวณเวลา
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // แสดงผล
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
+
+        // ถ้าหมดเวลา
+        if (distance < 0) {
+            clearInterval(countdownFunction);
+            document.getElementById("timer").innerHTML = "เปิดค่าย!";
+        }
+    }, 1000);
+  </script>
+
+  <!-- Custom JS for Sheets -->
+  <script src="assets/js/sheets.js"></script>
 </body>
 
+<!-- List Names Section Styles -->
+  <style>
+  /* List Names Section Styles */
+  .list-names-section {
+    padding: 60px 0;
+    background: linear-gradient(180deg, rgba(10, 16, 31, 0.9) 0%, rgba(10, 16, 31, 0.8) 100%);
+  }
+  
+  .list-names-section h2 {
+    color: #fff;
+    margin-bottom: 30px;
+  }
+  
+  .name-table-wrapper {
+    background: rgba(30, 30, 46, 0.9);
+    border-radius: 15px;
+    padding: 15px;
+    max-height: 400px;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow-y: auto;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  
+  .name-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    color: #fff;
+  }
+  
+  .name-table thead {
+    position: sticky;
+    top: 0;
+    background: rgba(30, 30, 46, 0.95);
+    z-index: 1;
+  }
+  
+  .name-table th {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    border-bottom: 2px solid rgba(74, 222, 128, 0.2);
+    color: #4ADE80;
+  }
+  
+  .name-table td {
+    padding: 8px 10px;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .name-table tbody tr {
+    transition: background-color 0.3s ease;
+  }
+  
+  .name-table tbody tr:hover {
+    background: rgba(74, 222, 128, 0.1);
+  }
+  
+  /* Custom Scrollbar */
+  .name-table-wrapper::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .name-table-wrapper::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+  }
+  
+  .name-table-wrapper::-webkit-scrollbar-thumb {
+    background: rgba(74, 222, 128, 0.5);
+    border-radius: 3px;
+  }
+  
+  .name-table-wrapper::-webkit-scrollbar-thumb:hover {
+    background: rgba(74, 222, 128, 0.7);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .name-table-wrapper {
+      max-width: 95%;
+      margin: 0 auto;
+    }
+    
+    .name-table th,
+    .name-table td {
+      padding: 8px;
+      font-size: 13px;
+    }
+  }
+
+  .neon-green-text {
+  color: #fff;
+  text-shadow: 
+    0 0 5px #4ADE80,
+    0 0 10px #4ADE80,
+    0 0 20px #4ADE80;
+  animation: softGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes softGlow {
+  from {
+    text-shadow: 
+      0 0 5px #4ADE80,
+      0 0 10px #4ADE80,
+      0 0 20px #4ADE80;
+  }
+  to {
+    text-shadow: 
+      0 0 7px #4ADE80,
+      0 0 15px #4ADE80,
+      0 0 25px #4ADE80;
+  }
+}
+  </style>
 </html>
