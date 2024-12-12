@@ -12,94 +12,119 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway", sans-serif;
+  --nav-font: "Poppins", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #1A1A2E; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #1acc8d; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+:root {
+  --background-color: #ffffff;
+  /* Background color for the entire website, including individual sections */
+  --default-color: #444444;
+  /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #1a1a2e;
+  /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #1acc8d;
+  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff;
+  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff;
+
+  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
   .image-caption {
-   
-    color: #c4bfbf; /* สีข้อความ */
-    margin-top: 10px; /* เพิ่มระยะห่างระหว่างรูปกับข้อความ */
+    color: #c4bfbf;
+    /* สีข้อความ */
+    margin-top: 10px;
+    /* เพิ่มระยะห่างระหว่างรูปกับข้อความ */
     text-align: center;
   }
+
   .features-item {
-    text-align: center; /* จัดข้อความและรูปให้อยู่ตรงกลาง */
+    text-align: center;
+    /* จัดข้อความและรูปให้อยู่ตรงกลาง */
   }
-  
+
   .feature-image {
-    width: 50px; /* ขนาดความกว้างของรูป */
-    height: 50px; /* ขนาดความสูงของรูป */
-    margin-bottom: 20px; /* เว้นระยะห่างระหว่างรูปกับข้อความ */
-    object-fit: cover; /* ปรับรูปให้พอดีขนาด */
+    width: 50px;
+    /* ขนาดความกว้างของรูป */
+    height: 50px;
+    /* ขนาดความสูงของรูป */
+    margin-bottom: 20px;
+    /* เว้นระยะห่างระหว่างรูปกับข้อความ */
+    object-fit: cover;
+    /* ปรับรูปให้พอดีขนาด */
   }
 
   .card {
     border-radius: 12px;
     overflow: hidden;
- 
+
     color: rgb(0, 0, 0);
   }
-  
+
   .card-img-top {
     max-height: 250px;
     object-fit: cover;
   }
-  
+
   .card-title {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #050505; /* สีเน้นหัวข้อ */
+    color: #050505;
+    /* สีเน้นหัวข้อ */
   }
-  
+
   .card-text {
     font-size: 1rem;
     margin-bottom: 20px;
   }
-  
+
   .btn-primary {
     background-color: #0056b3;
     border: none;
   }
-  
+
   .btn-primary:hover {
     background-color: #003f7f;
   }
+
   .card {
-    cursor: pointer; /* แสดงตัวชี้เพื่อบอกผู้ใช้ว่าคลิกได้ */
+    cursor: pointer;
+    /* แสดงตัวชี้เพื่อบอกผู้ใช้ว่าคลิกได้ */
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
-  
+
   .card:hover {
-    transform: scale(1.02); /* ขยายเล็กน้อยเมื่อเลื่อนเมาส์ */
+    transform: scale(1.02);
+    /* ขยายเล็กน้อยเมื่อเลื่อนเมาส์ */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   }
-  
+
   .text-decoration-none {
-    text-decoration: none; /* ลบเส้นใต้ของลิงก์ */
-    color: inherit; /* ใช้สีตามค่าเริ่มต้น */
+    text-decoration: none;
+    /* ลบเส้นใต้ของลิงก์ */
+    color: inherit;
+    /* ใช้สีตามค่าเริ่มต้น */
   }
-  
-  
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #ffffff;  /* The default color of the main navmenu links */
-  --nav-hover-color: #1acc8d; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #1acc8d; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
-
+  --nav-color: #ffffff;
+  /* The default color of the main navmenu links */
+  --nav-hover-color: #1acc8d;
+  /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff;
+  /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff;
+  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #444444;
+  /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #1acc8d;
+  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -110,7 +135,7 @@
 }
 
 .dark-background {
-  --background-color: #1A1A2E;
+  --background-color: #1a1a2e;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #0c0091;
@@ -625,7 +650,7 @@ h6 {
   border-color: var(--accent-color);
 }
 
-.footer .footer-newsletter .newsletter-form input[type=email] {
+.footer .footer-newsletter .newsletter-form input[type="email"] {
   border: 0;
   padding: 4px;
   width: 100%;
@@ -633,11 +658,11 @@ h6 {
   color: var(--default-color);
 }
 
-.footer .footer-newsletter .newsletter-form input[type=email]:focus-visible {
+.footer .footer-newsletter .newsletter-form input[type="email"]:focus-visible {
   outline: none;
 }
 
-.footer .footer-newsletter .newsletter-form input[type=submit] {
+.footer .footer-newsletter .newsletter-form input[type="submit"] {
   border: 0;
   font-size: 16px;
   padding: 0 20px;
@@ -648,7 +673,7 @@ h6 {
   border-radius: 0 4px 4px 0;
 }
 
-.footer .footer-newsletter .newsletter-form input[type=submit]:hover {
+.footer .footer-newsletter .newsletter-form input[type="submit"]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
@@ -963,7 +988,7 @@ section,
 
   .hero .btn-get-started,
   .hero .btn-watch-video {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
@@ -1768,31 +1793,33 @@ section,
   height: 100%;
 }
 
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email],
+.contact .php-email-form input[type="text"],
+.contact .php-email-form input[type="email"],
 .contact .php-email-form textarea {
   font-size: 14px;
   padding: 10px 15px;
   box-shadow: none;
   border-radius: 0;
   color: var(--default-color);
-  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
+  background-color: color-mix(in srgb,
+      var(--background-color),
+      transparent 50%);
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
-.contact .php-email-form input[type=text]:focus,
-.contact .php-email-form input[type=email]:focus,
+.contact .php-email-form input[type="text"]:focus,
+.contact .php-email-form input[type="email"]:focus,
 .contact .php-email-form textarea:focus {
   border-color: var(--accent-color);
 }
 
-.contact .php-email-form input[type=text]::placeholder,
-.contact .php-email-form input[type=email]::placeholder,
+.contact .php-email-form input[type="text"]::placeholder,
+.contact .php-email-form input[type="email"]::placeholder,
 .contact .php-email-form textarea::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   color: var(--contrast-color);
   background: var(--accent-color);
   border: 0;
@@ -1801,7 +1828,7 @@ section,
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 25%);
 }
 
@@ -1810,4 +1837,76 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+.neon-text {
+  color: #ffcc00;
+  /* สีเหลือง Neon */
+  text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00, 0 0 15px #ffcc00,
+    0 0 20px #ffcc00, 0 0 25px #ffcc00, 0 0 30px #ffcc00, 0 0 35px #ffcc00;
+  animation: neon-flicker 1.5s infinite alternate;
+}
+
+@keyframes neon-flicker {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.countdown {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ffcc00;
+  /* สีเหลือง Neon */
+  margin-top: 20px;
+}
+
+#timer {
+  font-weight: bold;
+
+  .me-3 {
+    margin-right: 1rem;
+  }
+
+  /* Status Paid Styles */
+  .status-paid {
+    color: #4ade80;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 50px;
+    background: rgba(74, 222, 128, 0.1);
+    border: 2px solid #4ade80;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(74, 222, 128, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .status-paid i {
+    font-size: 16px;
+    color: #4ade80;
+  }
+
+  .status-paid:hover {
+    background: #4ade80;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(74, 222, 128, 0.2);
+  }
+
+  .status-paid:hover i {
+    color: white;
+  }
+
 }
