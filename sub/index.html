@@ -32,9 +32,6 @@
   <!-- Google API -->
   <script src="https://apis.google.com/js/api.js"></script>
 
-  <!-- Custom JS for Sheets -->
-  <script src="assets/js/sheets.js"></script>
-
 </head>
 
 <body class="index-page">
@@ -43,7 +40,8 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1 class="sitename">Comcamp23</h1>
       </a>
 
@@ -53,7 +51,7 @@
           <li><a href="#about">หัวข้ออบรม</a></li>
           <li><a href="#features">สิ่งที่ได้รับ</a></li>
           <li><a href="#timeline" class="active">ไทม์ไลน์</a></li>
-          <li><a href="https://drive.google.com/file/d/1oiHqDyoBnBXCrS7Pxf3q6G0vlbsKKxT3/view?usp=sharing"
+          <li><a href="https://drive.google.com/file/d/1oiHqDyoBnBXCrS7Pxf3q6G0vlbsKKxT3/view?usp=drive_link"
               target="_blank" rel="noopener">กำหนดการ</a></li>
           <li><a href="#gallery">รีวิว</a></li>
           <li><a href="#team">เกี่ยวกับเรา</a></li>
@@ -297,7 +295,17 @@
               <h3><a class="stretched-link">ความรู้และประสบการณ์</a></h3>
             </div>
           </div><!-- End Feature Item -->
+
+
+
+
+
+
+
+
+
         </div>
+
       </div>
 
     </section><!-- /Features Section -->
@@ -1175,7 +1183,8 @@
     }, 1000);
   </script>
 
-
+  <!-- Custom JS for Sheets -->
+  <!-- <script src="assets/js/sheets.js"></script> -->
 </body>
 
 <!-- List Names Section Styles -->
@@ -1199,8 +1208,8 @@
     margin: 0 auto;
     overflow-y: auto;
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    -webkit-backdrop-filter: blur(80px);
-    backdrop-filter: blur(80px);
+    -webkit-backdrop-filter: blur(60px);
+    backdrop-filter: blur(60px);
     border: 1px solid rgba(255, 255, 255, 0.18);
   }
 
@@ -1217,7 +1226,7 @@
   }
 
   .name-table th {
-    padding: 20px;
+    padding: 10px;
     font-size: 14px;
     font-weight: 600;
     text-align: left;
@@ -1229,7 +1238,6 @@
     padding: 8px 10px;
     font-size: 14px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-
   }
 
   .name-table tbody tr {
@@ -1259,79 +1267,70 @@
     background: rgba(74, 222, 128, 0.7);
   }
 
-  /* Responsive Design */
-  @media (max-width: 768px) {
+/* Responsive Design */
+@media (max-width: 768px) {
     .name-table-wrapper {
-      max-width: 100%;
-      /* ขยายให้เต็มหน้าจอ */
-      margin: 0 10px;
-      /* เพิ่มระยะห่างจากขอบ */
-      padding: 10px;
+        max-width: 100%;  /* ขยายให้เต็มหน้าจอ */
+        margin: 0 10px;   /* เพิ่มระยะห่างจากขอบ */
+        padding: 10px;
     }
 
     .name-table {
-      display: block;
-      /* ปรับให้ตารางแสดงแบบ block */
-      overflow-x: auto;
-      /* ให้เลื่อนแนวนอนได้ */
+        display: block;  /* ปรับให้ตารางแสดงแบบ block */
+        overflow-x: auto; /* ให้เลื่อนแนวนอนได้ */
     }
 
     .name-table th,
     .name-table td {
-      padding: 12px 8px;
-      font-size: 13px;
-      min-width: 50px;
-      /* กำหนดความกว้างขั้นต่ำ */
+        padding: 12px 8px;
+        font-size: 13px;
+        min-width: 50px; /* กำหนดความกว้างขั้นต่ำ */
     }
 
     /* ปรับขนาดคอลัมน์ */
     .name-table th:first-child,
     .name-table td:first-child {
-      min-width: 10px;
-      /* ลำดับ */
+        min-width: 10px;  /* ลำดับ */
     }
-
+    
     .name-table th:nth-child(2),
     .name-table td:nth-child(2) {
-      min-width: 10px;
-      /* ชื่อ-นามสกุล */
+        min-width: 10px; /* ชื่อ-นามสกุล */
     }
-
+    
     .name-table th:nth-child(3),
     .name-table td:nth-child(3) {
-      min-width: 10px;
-      /* โรงเรียน */
+        min-width: 10px; /* โรงเรียน */
     }
-
+    
     .name-table th:nth-child(4),
     .name-table td:nth-child(4) {
-      min-width: 20px;
-      /* สถานะ */
+        min-width: 20px; /* สถานะ */
     }
 
     /* ปรับขนาดปุ่มสถานะ */
     .status-paid {
-      padding: 6px 12px;
-      font-size: 12px;
+        padding: 6px 12px;
+        font-size: 12px;
     }
 
     .status-paid i {
-      font-size: 14px;
+        font-size: 14px;
     }
-  }
+}
 
-  /* สำหรับหน้าจอขนาดเล็กมาก */
-  @media (max-width: 480px) {
+/* สำหรับหน้าจอขนาดเล็กมาก */
+@media (max-width: 480px) {
     .name-table-wrapper {
-      margin: 0 5px;
+        margin: 0 5px;
     }
 
     .name-table th,
     .name-table td {
-      padding: 8px 6px;
-      font-size: 12px;
+        padding: 8px 6px;
+        font-size: 12px;
     }
-  }
+}
 
   .neon-green-text {
     color: #fff;
@@ -1382,3 +1381,70 @@
 </style>
 
 </html>
+
+
+<script>
+const paymentNames = [
+  {
+    fullname: "ภัณฑ์ชาติ เพชรภัณฑ์กุล",
+    school: "โรงเรียนหล่มสักวิทยาคม",
+    status: "ชำระเงินแล้ว"
+  },
+  {
+    fullname: "เดชาธร เศวตกิตติกุล",
+    school: "โรงเรียนเพชรพิทยาคม",
+    status: "ชำระเงินแล้ว"
+  },
+  {
+    fullname: "พัชรพล วรรณคำ", 
+    school: "โรงเรียนเพชรพิทยาคม",
+    status: "ชำระเงินแล้ว"
+  },
+  {
+    fullname: "สุกลวัฒน์ เอี่ยมในวงษ์",
+    school: "โรงเรียนสุวรรณารามวิทยาคม",
+    status: "ชำระเงินแล้ว"
+  },
+  {
+    fullname: "เนติรัตน์ วิริยะ",
+    school: "โรงเรียนยโสธรพิทยาคม", 
+    status: "ชำระเงินแล้ว"
+  },
+  {
+    fullname: "กฤติภัทร บุญมาวงศ์",
+    school: "โรงเรียนมงฟอร์ตวิทยาลัย",
+    status: "ชำระเงินแล้ว"
+  },
+  {
+    fullname: "พานทอง พงษ์พัชระ",
+    school: "โรงเรียนสันกำแพง",
+    status: "ชำระเงินแล้ว"
+  },
+  {
+    fullname: "ปณิดา เดชวงศ์ญา",
+    school: "โรงเรียนสันกำแพง",
+    status: "ชำระเงินแล้ว"
+  },
+  {
+    fullname: "ณัฐนันท์ เถื่อนสันเทียะ",
+    school: "โรงเรียนวินิตศึกษา ในพระราชูปถัมภ์ฯ",
+    status: "ชำระเงินแล้ว"
+  }
+];
+
+// Add this script to populate the table
+document.addEventListener('DOMContentLoaded', function() {
+  const tableBody = document.querySelector('.name-table tbody');
+  
+  paymentNames.forEach((person, index) => {
+    const row = document.createElement('tr');
+    row.innerHTML = `
+      <td>${index + 1}</td>
+      <td>${person.fullname}</td>
+      <td>${person.school}</td>
+      <td><span class="status-paid"><i class="bi bi-check-circle"></i>${person.status}</span></td>
+    `;
+    tableBody.appendChild(row);
+  });
+});
+</script>
